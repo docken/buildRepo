@@ -1,0 +1,42 @@
+{
+  "name": "@docken/buildRepo",
+  "version": "1.0.0",
+  "access": "public",
+  "description": "Build a Docker Image from a git repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec -b --check-leaks test.js",
+    "watch": "mocha -R spec -b --check-leaks -w test.js",
+    "hint": "eslint index.js test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/docken/buildRepo.git"
+  },
+  "keywords": [
+    "error",
+    "express"
+  ],
+  "author": "Hans Kristian Flaatten <hans@starefossen.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/docken/buildRepo/issues"
+  },
+  "homepage": "https://github.com/docken/buildRepo#readme",
+  "devDependencies": {
+    "babel-eslint": "^4.0.5",
+    "dockerode": "^2.2.2",
+    "eslint": "^1.1.0",
+    "eslint-config-airbnb": "0.0.7",
+    "eslint-plugin-react": "^3.2.2",
+    "mocha": "^2.2.5"
+  },
+  "peerDependencies": {
+    "dockerode": "^2.2.2"
+  },
+  "engines": {
+    "node": ">=4.0.0",
+    "iojs": ">=1.0.0",
+    "docker": ">=1.8.0"
+  }
+}
